@@ -1,0 +1,1 @@
+export { CarwashPage } from './Carwash';

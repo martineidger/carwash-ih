@@ -1,0 +1,11 @@
+.app {
+  min-height: 100vh;
+}
+
+.app main {
+  min-height: 100vh;
+}
+
+.home-page {
+  padding-top: 0;
+}

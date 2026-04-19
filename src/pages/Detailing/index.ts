@@ -1,0 +1,1 @@
+export { DetailingPage } from './Detailing';

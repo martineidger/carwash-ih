@@ -1,0 +1,113 @@
+.footer {
+  background: var(--black-base);
+  color: var(--white-base);
+  padding: 60px 40px;
+  border-top: 1px solid var(--gray-border);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-section h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--blue-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: var(--gray-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--white-base);
+}
+
+.footer-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: var(--gray-secondary);
+}
+
+.footer-phone {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-base);
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid var(--gray-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom .copyright {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: var(--gray-secondary);
+}
+
+.footer-bottom .social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-bottom .social a {
+  padding: 10px 15px;
+  background: var(--black-secondary);
+  border: 1px solid var(--gray-border);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: var(--gray-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.footer-bottom .social a:hover {
+  background: var(--blue-primary);
+  border-color: var(--blue-primary);
+  color: var(--white-base);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 20px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
