@@ -1,4 +1,4 @@
-import { Hero, About, Services } from '../../components';
+import { Hero, About, Services, Features } from '../../components';
 import './Home.css';
 
 export function HomePage() {
@@ -7,8 +7,9 @@ export function HomePage() {
       <main>
         <Hero />
         <About />
+         <Features />
         <Services />
-        {/* <Features /> */}
+       
         {/* <Price /> */}
       </main>
     </div>

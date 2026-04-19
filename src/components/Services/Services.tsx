@@ -4,6 +4,7 @@ import './Services.css';
 export function Services() {
   return (
     <section className="services-section">
+      <h2 className="services-title">Наши услуги</h2>
       <div className="services-grid">
         {SERVICES.map((service) => (
           <a key={service.id} href={service.href} className="service-card">
