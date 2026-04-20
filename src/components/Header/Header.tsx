@@ -34,8 +34,8 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    const heroEl = document.getElementById('hero');
-    if (heroEl) return;
+    // const heroEl = document.getElementById('hero');
+    // if (heroEl) return;
 
     setShowHeaderCta(true);
 

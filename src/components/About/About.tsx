@@ -63,20 +63,20 @@ export function About() {
           const offset = circularOffset(i, activeIndex, len);
           const isVisible = offset === -1 || offset === 0 || offset === 1;
 
-          // Percent-based asymmetric layout with visible gaps.
-          // left: 18%, gap: 2%, center: 60%, gap: 2%, right: 18%
+           // Percent-based asymmetric layout with visible gaps.
+           // left: 18%, gap: 1%, center: 62%, gap: 1%, right: 18%
           let roleLeft = -9999;
           let roleWidth = 18;
-          if (offset === -1) {
-            roleLeft = 0;
-            roleWidth = 18;
-          } else if (offset === 0) {
-            roleLeft = 20;
-            roleWidth = 60;
-          } else if (offset === 1) {
-            roleLeft = 82;
-            roleWidth = 18;
-          }
+           if (offset === -1) {
+             roleLeft = 0;
+             roleWidth = 18;
+           } else if (offset === 0) {
+             roleLeft = 19;
+             roleWidth = 62;
+           } else if (offset === 1) {
+             roleLeft = 82;
+             roleWidth = 18;
+           }
 
           return (
             <button

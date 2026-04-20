@@ -20,6 +20,12 @@
   --blue-hover: #ececec;
   --blue-bg-accent: #220000;
   --blue-detail: #d5d5d5;
+
+  /* Tailwind-like accents (used for Features preview) */
+  --red-600: #dc2626;
+  --red-600-rgb: 220, 38, 38;
+  --zinc-500: #71717a;
+  --zinc-300: #d4d4d8;
 }
 
 * {

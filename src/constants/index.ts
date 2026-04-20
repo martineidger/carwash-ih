@@ -54,6 +54,35 @@ export const FEATURES: Feature[] = [
   { id: '5', title: 'LOUNGE ЗОНА С PS4, КОФЕ, ДЕСЕРТАМИ И ВКУСНЫМИ СЕНДВИЧАМИ', imageUrl: '/assets/images/features/more_5.jpg' },
 ];
 
+export const MERCEDES_ADVANTAGES_TITLE = 'Наши преимущества';
+
+export const MERCEDES_ADVANTAGES_STATS = [
+  {
+    value: '5000+',
+    label: 'довольных клиентов',
+    description:
+      'Нам доверяют владельцы автомобилей, которые ценят безупречный внешний вид и высокий уровень сервиса',
+  },
+  {
+    value: '7 лет',
+    label: 'опыта работы',
+    description:
+      'Годы практики позволили нам довести каждый процесс до идеального результата',
+  },
+  {
+    value: '98%',
+    label: 'возвращаются снова',
+    description:
+      'Клиенты возвращаются благодаря стабильному качеству и вниманию к деталям',
+  },
+  {
+    value: '24/7',
+    label: 'запись онлайн',
+    description:
+      'Вы можете записаться в любое удобное время без звонков и ожиданий',
+  },
+] as const;
+
 export const PRICE_TABS: PriceTab[] = [
   {
     id: 'base',

@@ -1,26 +1,29 @@
-import { FEATURES, VIDEO_URL, VIDEO_POSTER } from '../../constants';
+import {
+  MERCEDES_ADVANTAGES_STATS,
+  MERCEDES_ADVANTAGES_TITLE,
+} from '../../constants';
 import './Features.css';
 
 export function Features() {
   return (
-    <section className="features-hero">
-      <div className="video-bg">
-        <video autoPlay loop muted playsInline poster={VIDEO_POSTER}>
-          <source src={VIDEO_URL} type="video/mp4" />
-        </video>
-        <div className="video-overlay"></div>
-      </div>
-      <div className="features-content">
-        <h2>ЧТО ТАКОЕ BLACK STAR CAR WASH?</h2>
-        <div className="features-grid">
-          {FEATURES.map((feature) => (
-            <div key={feature.id} className="feature-item">
-              <img src={feature.imageUrl} alt={feature.title} />
-              <span>{feature.title}</span>
+    <div className="features-hero">
+      <section className="features-inner">
+        <h2 className="features-title">{MERCEDES_ADVANTAGES_TITLE}</h2>
+
+        <div className="advantages-grid">
+          {MERCEDES_ADVANTAGES_STATS.map((item) => (
+            <div key={item.value} className="advantages-card group">
+              <div className="advantages-value">{item.value}</div>
+
+              <div className="advantages-content">
+                <p className="advantages-label">{item.label}</p>
+                {/* <div className="advantages-line" /> */}
+                <p className="advantages-description">{item.description}</p>
+              </div>
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
